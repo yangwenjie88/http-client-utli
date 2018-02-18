@@ -3,10 +3,7 @@ package com.httpclient.test;
 import com.yangwenjie.httpclient.HttpClientUtils;
 import com.yangwenjie.httpclient.core.HttpEntityType;
 import com.yangwenjie.httpclient.core.HttpRequestConfig;
-import com.yangwenjie.httpclient.core.HttpRequestMethod;
 import com.yangwenjie.httpclient.core.HttpRequestResult;
-import org.apache.http.HttpResponse;
-import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 
 import java.io.File;
