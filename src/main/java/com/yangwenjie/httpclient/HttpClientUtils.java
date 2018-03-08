@@ -62,10 +62,11 @@ public class HttpClientUtils {
                                         .timeout(CONNECT_TIMEOUT,SOCKET_TIMEOUT,CONNECT_REQUEST_TIMEOUT)
                                         .pool(MAX_TOTAL,MAX_PER_ROUTE)
                                         .retry(RETRY_TIMES,false).build();
-                            httpRequestConfig.client(httpsClient);
+
                         }
                     }
                 }
+                httpRequestConfig.client(httpsClient);
             } else {
                 if (httpClient == null) {
                     synchronized (syncLock) {
@@ -74,10 +75,11 @@ public class HttpClientUtils {
                                     .timeout(CONNECT_TIMEOUT,SOCKET_TIMEOUT,CONNECT_REQUEST_TIMEOUT)
                                     .pool(MAX_TOTAL,MAX_PER_ROUTE)
                                     .retry(RETRY_TIMES,false).build();
-                            httpRequestConfig.client(httpClient);
+
                         }
                     }
                 }
+                httpRequestConfig.client(httpClient);
             }
         }
     }
